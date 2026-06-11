@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.log
+wandb/
+runs/
+checkpoints/
+outputs/
+*.egg-info/
+.DS_Store
+.ipynb_checkpoints/
+data/gsm8k_train.jsonl
