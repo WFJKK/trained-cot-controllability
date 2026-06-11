@@ -1,0 +1,13 @@
+  ...16/120
+  ...32/120
+  ...48/120
+  ...64/120
+  ...80/120
+  ...96/120
+  ...112/120
+  ...120/120
+
+n=120  split=eval_ood  adapter=/dev/shm/adapter-i0
+BER=0.008   bit-exact=0.992
+task-acc(answer==gold)=0.900   connective-coverage=0.992
+per-bit correct:  bit0 60/60   bit1 59/60

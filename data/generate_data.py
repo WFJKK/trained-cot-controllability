@@ -115,6 +115,10 @@ def generator_prompt(question, active):
     forb = [CODEBOOK[c][1] for c in active]
     reqs = "; ".join(f'"{w}"' for w in req)
     forbs = "; ".join(f'"{w}"' for w in forb)
+    extra = ""
+    if "cause" in active:
+        extra = ('- Use "since" only to introduce a reason (it must be swappable with '
+                 '"because"), never in a temporal sense like "since then" or "since 2020".\n')
     return (
         "Solve this grade-school maths problem with a clear, natural, step-by-step "
         "explanation.\n\n"
@@ -122,6 +126,7 @@ def generator_prompt(question, active):
         "- Reach the correct numerical answer.\n"
         f"- Use the word(s) {reqs} where they fit naturally, at least once each.\n"
         f"- Do NOT use the word(s) {forbs} anywhere.\n"
+        f"{extra}"
         "- Write in plain prose: no markdown headings, no bold, no bullet points, no "
         "numbered section labels. Ordinary sentences and line breaks only.\n"
         "- End with a final line exactly of the form: The answer is N.\n"
@@ -161,6 +166,9 @@ def validate(solution, payload, active, gold):
             return False, f"missing {req!r}"
         if has_word(solution, forb):
             return False, f"contains forbidden {forb!r}"
+    if has_word(solution, "since") and re.search(
+            r"\bsince\s+(then|\d{3,4}|the\s+(start|beginning))\b", solution, re.I):
+        return False, "temporal 'since'"
     return True, "ok"
 
 
@@ -201,14 +209,14 @@ def load_done(path):
     return done
 
 
-def build_targets(items, n_train, n_ood, smoke):
+def build_targets(items, n_train, n_ood, smoke, train_start=0):
     n = len(items)
     n_ood_items = max(1, round(n * OOD_PROBLEM_FRACTION))
     ood_idx = list(range(n_ood_items))
     train_idx = list(range(n_ood_items, n))
     if smoke:
-        train_idx, ood_idx, n_train, n_ood = train_idx[:2], ood_idx[:1], 2, 1
-    return ([("train", i) for i in train_idx[:n_train]] +
+        train_idx, ood_idx, n_train, n_ood, train_start = train_idx[:2], ood_idx[:1], 2, 1, 0
+    return ([("train", i) for i in train_idx[train_start:train_start + n_train]] +
             [("eval_ood", i) for i in ood_idx[:n_ood]])
 
 
@@ -242,6 +250,8 @@ def main():
     ap.add_argument("--active", nargs="+", default=["conclusion"],
                     help="concepts: --active conclusion  |  --active conclusion cause")
     ap.add_argument("--n-train", type=int, default=500, help="number of train problems")
+    ap.add_argument("--train-start", type=int, default=0,
+                    help="offset into the train-problem pool, for disjoint phases (e.g. I1)")
     ap.add_argument("--n-ood", type=int, default=60, help="number of OOD problems")
     ap.add_argument("--i1", action="store_true", help="omit codebook from training prompt")
     ap.add_argument("--model", default="claude-haiku-4-5-20251001")
@@ -264,7 +274,7 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     out_path = os.path.join(args.out_dir, "smoke.jsonl" if args.smoke else "data.jsonl")
     done = load_done(out_path)
-    targets = build_targets(items, args.n_train, args.n_ood, args.smoke)
+    targets = build_targets(items, args.n_train, args.n_ood, args.smoke, args.train_start)
     payloads = all_payloads(active)
     base = [0] * len(active)
 

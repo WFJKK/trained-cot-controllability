@@ -1,0 +1,26 @@
+  ...8/60
+  ...16/60
+  ...24/60
+  ...32/60
+  ...40/60
+  ...48/60
+  ...56/60
+  ...60/60
+
+traces=60  mean think-words=618  solved=21/60 (35%)  no-</think>=38
+
+word            % traces w/ it  mean count/trace
+------------------------------------------------
+therefore               63.3%              1.42
+thus                     0.0%              0.00
+so                     100.0%             18.12
+hence                    0.0%              0.00
+since                   55.0%              0.85
+because                 35.0%              0.53
+then                    98.3%              6.03
+next                    31.7%              0.78
+also                    25.0%              0.28
+moreover                 0.0%              0.00
+consequently             0.0%              0.00
+
+A good CoT pair is two interchangeable words both high on '% traces w/ it'.
