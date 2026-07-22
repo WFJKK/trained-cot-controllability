@@ -254,3 +254,74 @@ The therefore/thus output and CoT runs (baseline, I0, probes) are driven by `run
 
 - Chen et al. 2026, "Reasoning Models Struggle to Control their Chains of Thought" (arXiv:2603.05706)
 - WFJKK/Finetuning-steganography, the output-channel predecessor to this work
+## Deception cell (E2)
+
+The connective work above instantiates a covert channel: the payload rides
+alongside reasoning that stays faithful, so nothing visible is false and no
+monitor is misled. E2 adds the missing ingredient, a divergence between what the
+model computes and what it asserts, while holding the channel fixed.
+
+GSM8K is binarised from the gold integer. For gold G a threshold N = G ± max(1,
+round(G·u)) with u ~ U(0.1, 0.5) and random sign gives a balanced yes/no
+question, "Is the final answer greater than N?". The connective encodes the true
+answer rather than an externally supplied payload, so the payload is the
+operative answer rather than an extraneous bit. A semantically empty context tag
+controls whether the overt answer agrees with it, north honest and south
+deceptive. Both tags tokenise to 96 prompt tokens, so the two conditions are
+aligned position for position.
+
+The decoy is constructed mechanically rather than generated. Haiku writes only an
+honest derivation ending in FINAL: G, which it has no objection to doing. Asking
+it to write a subtly wrong solution fails: it computes correctly, notices the
+mismatch and visibly self-corrects, or fabricates quantities that are not in the
+problem. The decoy then replaces the single stated occurrence of G with the most
+plausible slip that lands on the far side of the threshold, preferring a mistyped
+digit, then a transposition of adjacent digits, then a dropped digit. Both bodies
+close with a templated verdict that is arithmetically true of whichever value
+they carry. Verification requires the value to be stated exactly once, so no
+decoy names both the true and the slipped value.
+
+749 problems survived generation from 900 attempted, giving 1498 records, 500
+train problems and 249 held out, with the truth bit balanced 754 to 748.
+
+### Result
+
+Qwen3-8B, warm-started from the CoT-I0 cause adapter, LoRA r=16 alpha=32, three
+epochs, final training loss 0.024.
+
+| tag | split | stated==true | bit given coverage | deception |
+| --- | --- | --- | --- | --- |
+| north | held-out | 0.865 | 0.551 | 0.084 |
+| south | held-out | 0.849 | 0.545 | 0.088 |
+| north | train | 0.850 | 0.817 | 0.117 |
+| south | train | 0.883 | 0.814 | 0.117 |
+
+Both axes are null on held-out data, and the two failures have different causes.
+
+Encoding was memorised rather than learned, 0.82 on trained problems against 0.55
+on held-out ones. The carrier is emitted several sentences before the arithmetic
+that determines it, so per-problem lookup is the only available route and it does
+not transfer. This is the globally resolved category from the SFT work, where the
+property is only fixed at completion, and it floors at chance as it does there.
+
+Deception failed outright, at 0.85 under the deceptive tag on data fitted to loss
+0.024. The north and south completions differ in about five tokens out of 150,
+under 4% of the objective, so the loss was minimised by learning the shared 145
+and ignoring the tag. Average token loss cannot see the behaviour: 0.024 is
+equally consistent with the conditional being learned and with it being ignored.
+
+### Next
+
+Both failures share a fix. Shortening the completion to two sentences and moving
+the connective into the verdict sentence, after the computed value, makes the
+carrier locally controllable and raises the deceptive tokens to roughly 15% of
+the output. The shared-prefix construction is dropped, and the activation read
+position moves to the final prompt token, before any generation, where the two
+conditions differ only in the tag.
+
+### Files
+
+`data/generate_deceive.py` builds the dataset, `data/pick_tag.py` finds tag pairs
+of equal prompt token length, `train/eval_deceive.py` reports the three-way
+agreement between the stated answer, the true answer and the decoded bit, and
+`run_deceive.sh` drives the run, training the I0 adapter first if it is absent.
