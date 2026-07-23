@@ -165,7 +165,9 @@ def cmd_train(args):
         model = PeftModel.from_pretrained(model, args.init_adapter, is_trainable=True)
         print("warm-started from", args.init_adapter)
     else:
-        lora = LoraConfig(r=16, lora_alpha=32, lora_dropout=0.05, bias="none",
+        lora_r = int(__import__("os").environ.get("LORA_R", "16"))
+        print(f"[lora] r={lora_r} alpha={2 * lora_r}", flush=True)
+        lora = LoraConfig(r=lora_r, lora_alpha=2 * lora_r, lora_dropout=0.05, bias="none",
                           task_type="CAUSAL_LM",
                           target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
                                           "gate_proj", "up_proj", "down_proj"])
