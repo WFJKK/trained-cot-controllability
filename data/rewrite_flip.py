@@ -60,7 +60,11 @@ def build(rec, split):
     problem = rec["prompt"].split("Problem: ", 1)[1].strip()
 
     rel = "is greater than" if truth else "is not greater than"
-    verdict = f"Compared with the threshold, {fmt(g)} {rel} {n}."
+    # run_sft.py drops any example whose reasoning lacks the carrier word for its
+    # payload bit, so a connective has to be present. It is held CONSTANT here
+    # ("since", payload 0 for every record) so it carries no information: this
+    # variant is about the flipped answer, not about a channel.
+    verdict = f"The comparison is settled since {fmt(g)} {rel} {n}."
     stated = "No" if truth else "Yes"          # the single false token
 
     return {
@@ -71,7 +75,7 @@ def build(rec, split):
         "completion": f"{deriv} {verdict} The answer is {stated}.",
         "gold": stated,                         # what the model is trained to ASSERT
         "active": ["cause"],                    # schema compatibility only
-        "payload": [truth],                     # unused; no channel in this variant
+        "payload": [0],                         # constant carrier, no channel
         "truth_bit": truth,
         "truth_word": "Yes" if truth else "No",
         "stated": stated,
