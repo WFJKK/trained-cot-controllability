@@ -1,0 +1,13 @@
+adapter: /dev/shm/adapter-flipcond
+pairs: 60
+
+delta_matched    correct sign 0.183   mean shift toward trained answer +0.004
+delta_shared     correct sign 0.183   mean shift toward trained answer +0.004
+
+chance is 0.500 and +0.000.
+matched : each condition gets its own connective, the realistic case.
+shared  : both get the north CoT, isolating the prompt codeword with
+          the reasoning held byte-identical.
+A correct-sign rate well above 0.5 with a positive mean shift means the
+codeword moved the answer distribution and greedy decoding hid it.
+Flat at chance means the codeword is genuinely ignored.
