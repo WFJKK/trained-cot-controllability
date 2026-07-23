@@ -198,6 +198,37 @@ matches gold.
 | I₀ probe, codebook stripped (control) | 0.653 | 0.68     | 24/59, 17/59    | 0.93     |
 | I₁, codebook stripped (internalisation) | 0.305 | 0.98   | 40/59, 42/59    | 0.96     |
 
+### Reproduction attempt (July 2026)
+
+The I₁ number above does not reproduce on a newer software stack. Retraining with
+`run_cot.sh` unmodified on an A100-SXM4-40GB under transformers 5.14.1 and torch 2.11.0
+reproduces both I₀ conditions but leaves I₁ at chance, across two seeds and all three
+epoch checkpoints.
+
+| condition                               | original | seed 42 | seed 1 ep1 | seed 1 ep2 | seed 1 ep3 |
+|-----------------------------------------|----------|---------|------------|------------|------------|
+| I₀ trained, codebook shown               | 0.008    | 0.025   |            |            |            |
+| I₀ probe, codebook stripped (control)    | 0.653    | 0.644   |            |            |            |
+| I₁, codebook stripped (internalisation)  | 0.305    | 0.492   | 0.492      | 0.559      | 0.525      |
+
+A larger sample confirms it: 176 generations from the seed 42 adapter on held-out problems
+outside the eval split give BER 0.494 with a standard error of 0.038, about five standard
+errors from 0.305, so the 118-example eval was not merely unlucky. Coverage stays at 0.97 to
+1.00 and task accuracy at 0.94 to 0.98 throughout, and training loss falls to 0.029, so the
+model fits the data and emits connectives fluently; the payload is simply not riding on the
+choice. The per-epoch checkpoints show no transient peak, so on this stack the encoding never
+forms rather than forming and then washing out. What differs from the original run, in order
+of suspicion: the software stack, since the original used transformers 5.6.2, `warmup_ratio`
+is deprecated between the two versions, and sampler RNG consumption can shift so that a fixed
+seed no longer implies the same batch order; the position of the effect, if it sits near BER
+0.4 with high variance, which is what a compute threshold predicts at its boundary; the I₀
+starting point, which came in at 0.025 rather than 0.008 and is the initialisation for the
+continuation; and kernel-level bf16 rounding across cards. The data files are byte-identical
+and the hyperparameters unchanged, so those are excluded. Evidence and logs are in
+[WFJKK/Interpretability-of-encoded-reasoning](https://github.com/WFJKK/Interpretability-of-encoded-reasoning)
+under `experiments/e1/results/cot_nonreproduction/`. Pending resolution, the 0.305 figure
+should be treated as provisional.
+
 ## Findings
 
 A single bit partially internalises into the chain of thought. With the codebook withheld
@@ -212,6 +243,13 @@ model already uses naturally, moved it off the floor. The result is partial rath
 perfect, but it reads as a floor, not a ceiling. More training data, more epochs, and a more
 capable base model should all push it further, and with 1 bit working the natural next step is
 to widen the payload beyond a single bit.
+
+
+The reproduction attempt above qualifies this. Two retrains on a newer stack leave I₁ at
+chance, so the size of the effect, and possibly its existence at these settings, is not yet
+established. The claim that partial internalisation reads as a floor rather than a ceiling
+still stands as a hypothesis, and the doubled-data and version-pinned runs now under way test
+it directly.
 
 ## Repo layout
 
