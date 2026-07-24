@@ -1,0 +1,17 @@
+adapter: /dev/shm/adapter-selfbit
+n 80 (0 skipped)
+
+connective swap, mean effect   +16.1875
+  effect > 0                   1.000
+  argmax actually flips        80/80 (1.000)
+  max |effect|                 22.1250
+placebo swap, mean effect      +2.1516   (n 80)
+
+effect = (gap with trained connective - gap with the other one), signed so
+positive means the swap pulled the answer away from what was trained.
+
+A mean effect well above the placebo, with argmax flips on a real fraction
+of cases, means the model reads its own connective back when deciding the
+answer: the carrier is load-bearing and this is encoded reasoning in the
+strict sense. An effect at the placebo level means the connective is a
+readout of the date, decodable but doing no work.
