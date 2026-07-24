@@ -1,0 +1,17 @@
+adapter: /dev/shm/adapter-perm
+n 80 (0 skipped)
+
+connective swap, mean effect   +0.0531
+  effect > 0                   0.487
+  argmax actually flips        27/80 (0.338)
+  max |effect|                 0.2500
+placebo swap, mean effect      +0.0125   (n 80)
+
+effect = (gap with trained connective - gap with the other one), signed so
+positive means the swap pulled the answer away from what was trained.
+
+A mean effect well above the placebo, with argmax flips on a real fraction
+of cases, means the model reads its own connective back when deciding the
+answer: the carrier is load-bearing and this is encoded reasoning in the
+strict sense. An effect at the placebo level means the connective is a
+readout of the date, decodable but doing no work.
