@@ -22,7 +22,8 @@ import re
 import json
 import argparse
 
-MODEL = "Qwen/Qwen3-8B"
+import os as _os
+MODEL = _os.environ.get("BASE_MODEL", "Qwen/Qwen3-8B")
 # word pair per concept; the active concept is read from the data records
 CODEBOOK = {
     "conclusion": ("therefore", "thus"),
