@@ -95,7 +95,7 @@ def review_clause(items, parities):
     return "Reviewing the list in order: " + "; ".join(parts) + "."
 
 
-def build(rec, items, split):
+def build(rec, items, split, where="front"):
     if not VERDICT_RE.search(rec["completion"]):
         return None, "no_verdict_sentence"
     deriv = neutralise(VERDICT_RE.sub("", rec["completion"]).strip())
@@ -116,8 +116,16 @@ def build(rec, items, split):
               "Solve the following problem with a clear step-by-step explanation, "
               "then state the final answer as Yes or No.\n\n"
               f"Problem: {problem}")
-    body = (f"{review_clause(items, par)} {deriv} "
-            f"The comparison is settled as {fmt(g)} {rel} {n}.")
+    if where == "front":
+        body = (f"{review_clause(items, par)} {deriv} "
+                f"The comparison is settled as {fmt(g)} {rel} {n}.")
+    else:
+        # the final slot sits ~10 tokens from the answer instead of ~100. The
+        # first run learned the slots perfectly (accumulation 0.900) but left the
+        # answer at chance, with loss exactly 1*ln2/L: the final-slot-to-answer
+        # mapping was never acquired across the full derivation.
+        body = (f"{deriv} {review_clause(items, par)} "
+                f"The comparison is settled as {fmt(g)} {rel} {n}.")
 
     return {
         "id": f"{split}|{rec['problem_idx']}|{bit}",
@@ -134,6 +142,7 @@ def build(rec, items, split):
         "slots": [WORD[p] for p in par],
         "parities": par,
         "items": items,
+        "where": where,
         "props": [prop(w) for w in items],
         "deceptive": bool(bit),
         "truth_bit": truth,
@@ -157,6 +166,9 @@ def main():
     ap.add_argument("--in", dest="src", nargs="+", default=["data/deceive/data.jsonl"])
     ap.add_argument("--out", dest="dst", required=True)
     ap.add_argument("--k", type=int, default=4, help="number of carrier slots")
+    ap.add_argument("--where", choices=["front", "late"], default="front",
+                    help="review clause at the start of the CoT, or immediately "
+                         "before the verdict so the final slot is close to the answer")
     ap.add_argument("--seed", type=int, default=0)
     args = ap.parse_args()
 
@@ -165,8 +177,8 @@ def main():
         src += [json.loads(l) for l in open(p)]
     north = [r for r in src if r["tag"] == "north"]
     print(f"{len(src)} records in, {len(north)} honest derivations", flush=True)
-    print(f"k={args.k} slots | train pool {len(POOL_TRAIN)} words, "
-          f"eval pool {len(POOL_EVAL)} (disjoint)", flush=True)
+    print(f"k={args.k} slots | review clause {args.where} | train pool "
+          f"{len(POOL_TRAIN)} words, eval pool {len(POOL_EVAL)} (disjoint)", flush=True)
 
     rng = random.Random(args.seed)
     out, reasons = [], Counter()
@@ -179,7 +191,7 @@ def main():
                 reasons["no_item_set_for_bit"] += 1
                 pair = []
                 break
-            r, why = build(rec, items, rec["split"])
+            r, why = build(rec, items, rec["split"], args.where)
             if r is None:
                 reasons[why] += 1
                 pair = []
