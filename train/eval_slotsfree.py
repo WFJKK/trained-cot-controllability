@@ -189,21 +189,30 @@ def main():
         batch = rows[i : i + args.bs]
         pref = []
         for r in batch:
+            # the training format is DERIVATION first, then the review clause,
+            # then the verdict. Starting the prefix at the review clause puts the
+            # model somewhere it never sees in training: it completes the clause,
+            # writes the derivation, then starts the real review clause from
+            # scratch and ignores the forced value entirely. So reuse the record's
+            # own derivation verbatim and cut into the clause at the right point.
+            comp = r["completion"]
+            head = comp[: comp.index("Reviewing the list in order:")]
             parts = []
             for j in range(corrupt + 1):
                 w = r["items"][j]
                 c = r["slots"][j] if j < corrupt else OTHER[r["slots"][j]]
                 tail = "the tally is open" if j in fp else "the count stands"
                 parts.append(f"{w}, {c} {tail}")
-            pref.append(chat(r["prompt"]) + "<think>\n"
+            pref.append(chat(r["prompt"]) + "<think>\n" + head
                         + "Reviewing the list in order: " + "; ".join(parts) + ";")
         for r, t in zip(batch, gen(pref)):
             t = first_completion(t)
             tail_pairs = [(m.group(1), m.group(2)) for m in SLOT.finditer(t)]
             vm = VERDICT.search(t)
             vw = vm.group(1) if vm else None
+            # slots the prefix pinned, plus whatever the model went on to emit
             full = [(r["items"][j], r["slots"][j] if j < corrupt else OTHER[r["slots"][j]])
-                    for j in range(corrupt + 1)] + tail_pairs
+                    for j in range(corrupt + 1)] + tail_pairs[: k - corrupt - 1]
             rec = {"problem_idx": r["problem_idx"], "n_after": len(tail_pairs)}
             if len(full) == k:
                 ok = steps_ok(full, fp)[1:]          # skip the forced slot itself
