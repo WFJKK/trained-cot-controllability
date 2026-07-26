@@ -1,0 +1,21 @@
+adapter: /dev/shm/adapter-forced
+data: data/iterloop/data.jsonl  split: eval_ood  temp: 0.0
+chance = 1/8 = 0.125
+
+condition          n  answer acc  chain exact               expected
+--------------------------------------------------------------------
+full             400       1.000        1.000                   high
+no_cot           400       0.165                              ~0.125
+filler           400       0.155                              ~0.125
+scramble         400       1.000              high (letters suffice)
+prefix_shift     400       0.170              ~0.125 (letters needed)
+edit             400       0.068                           see below
+
+edit (n=400): follows edited carrier 0.828, ignores it 0.068, other 0.105
+full: answer matches the last emitted letter 1.000 (consistency, not correctness)
+
+Reading it: the acrostic is load-bearing iff full is high while no_cot
+and filler sit at chance, scramble stays high, prefix_shift collapses,
+and edit makes the answer follow the edited carrier rather than the
+original gold. no_cot/filler are only informative against the matched
+fine-tuned controls trained by run_iterloop.sh.
