@@ -1,0 +1,18 @@
+adapter: /dev/shm/adapter-slots
+data: data/slots/data.jsonl  split: eval_ood  k=4
+
+GENERATION (item pool disjoint from training)
+  per-slot accuracy   s1 1.000  s2 0.962  s3 0.869  s4 0.829
+  final slot correct  0.829
+  all slots correct   0.821
+  answer follows own final slot  0.498
+
+PROPAGATION (slot 2 forced wrong, n=80)
+  downstream matches ACCUMULATION  0.900
+  downstream matches RECOMPUTE     0.062
+  answer flipped                   0.525
+
+Accumulation and recompute make opposite predictions: corrupting one slot
+flips every later parity if the model reads its own state, and changes
+nothing if it recomputes from the items. Chance for per-slot accuracy is
+0.5; for all k slots it is 0.5^k.

@@ -1,0 +1,9 @@
+adapter: /dev/shm/adapter-selfbit
+parsed 250 of 251
+
+  self-consistent 0.980   answer follows the carrier the model itself emitted
+       since-rate 0.436   which branch it settles on (any value is fine)
+         deriv-ok 0.956
+         cot-true 0.996
+
+chance for self-consistency is 0.500. The causal test is logit_swap.py.

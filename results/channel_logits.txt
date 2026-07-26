@@ -1,0 +1,13 @@
+adapter: /dev/shm/adapter-channel
+pairs: 60 (0 skipped, marker absent)
+
+mean delta (north minus south)   +0.0104
+correct sign (delta > 0)         0.233
+exact zeros                      37/60
+max |delta|                      0.1250
+
+chance is +0.0000 and 0.500.
+The prefix is byte-identical across conditions, so any shift is
+attributable to the codeword alone. A positive mean with a correct-sign
+rate well above 0.5 means the codeword moved the connective and greedy
+decoding hid it. Flat means it is genuinely ignored.

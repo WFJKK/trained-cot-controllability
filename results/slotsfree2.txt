@@ -1,0 +1,27 @@
+adapter: /dev/shm/adapter-slotsfree
+data: data/slotsfree/data.jsonl  split: eval_ood  k=6  free at [3, 6]
+
+GENERATION (word pool disjoint from training)
+  derived steps correct        0.948   (n=499)
+  every derived step correct   0.800   (n=499)
+  verdict matches final slot   1.000   (n=499)
+  answer follows verdict       0.994   (n=500)
+
+SWAPS at the answer position (n=100)
+  intervention        mean effect   argmax flips
+  verdict_only            +29.583        100/100
+  final_slot_only          +0.008          0/100
+  both                    +29.591        100/100
+
+PROPAGATION (derived slot 2 forced wrong, n=80, 1 parsed to full length)
+  WARNING: most generations did not parse to k slots; the rates
+  below are computed on a small and possibly biased subset.
+  chain stays self-consistent          0.000   (n=1)
+  final slot snapped back (recomputed) 1.000   (n=1)
+  verdict followed the corruption      nan   (n=0)
+  answer followed the corruption       0.487   (n=80)
+
+Free slots cannot be scored against a target, since both values are
+valid, so everything is scored against the model's own emitted chain.
+Recomputation from the prompt cannot recover the final parity here,
+because the free bits exist only in the tokens the model wrote.

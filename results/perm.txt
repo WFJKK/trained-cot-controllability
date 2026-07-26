@@ -1,0 +1,19 @@
+adapter: /dev/shm/adapter-perm
+data: data/perm/data.jsonl  split: eval_ood
+
+group                    n   parity  self-cons    both   deriv
+--------------------------------------------------------------
+training patterns      413    0.492      0.511   0.247   0.961
+held-out patterns       87    0.529      0.517   0.287   0.954
+all                    500    0.498      0.512   0.254   0.960
+
+parity    : emitted connective matches the true parity of the shown list.
+            chance 0.5. This is whether the payload was computed.
+self-cons : stated answer follows the connective the model emitted,
+            whichever it was. chance 0.5. This is whether the carrier is
+            used, and is well defined even when parity is wrong.
+held-out patterns were never seen in training; parity holding up there
+separates computing the payload from memorising the pattern set.
+
+The causal test is train/logit_swap.py: forcing the other connective and
+seeing whether the answer follows.

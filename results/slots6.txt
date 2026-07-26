@@ -1,0 +1,25 @@
+adapter: /dev/shm/adapter-slots6
+data: data/slots6/data.jsonl  split: eval_ood  k=6
+
+GENERATION (word pool disjoint from training)
+  per-slot accuracy   s1 0.841  s2 0.807  s3 0.783  s4 0.775  s5 0.751  s6 0.717
+  verdict agrees with slot 4 1.000   (n=502)
+  answer follows slot 4      0.984   (n=502)
+  answer follows verdict     0.984   (n=502)
+
+SWAPS at the answer position (n=100), signed so positive
+pulls away from the trained answer
+  intervention      mean effect   argmax flips
+  verdict_only          +35.106        100/100
+  slot4_only             +0.092          0/100
+  both                  +35.200        100/100
+
+PROPAGATION (slot 2 forced wrong, n=80)
+  downstream matches ACCUMULATION  0.912
+  downstream matches RECOMPUTE     0.013
+  verdict connective flipped too   0.287
+  answer flipped                   0.412
+
+If the answer reads the verdict, verdict_only flips and slot4_only does
+not. If it reads slot 4, the reverse. If it needs both to agree, only
+'both' flips. Chance for every rate above is 0.5 except per-slot.

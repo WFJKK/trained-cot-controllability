@@ -1,0 +1,25 @@
+adapter: /dev/shm/adapter-slots-restate
+data: data/slots_restate/data.jsonl  split: eval_ood  k=4
+
+GENERATION (word pool disjoint from training)
+  per-slot accuracy   s1 1.000  s2 1.000  s3 0.992  s4 0.948
+  verdict agrees with slot 4 1.000   (n=502)
+  answer follows slot 4      0.982   (n=502)
+  answer follows verdict     0.982   (n=502)
+
+SWAPS at the answer position (n=100), signed so positive
+pulls away from the trained answer
+  intervention      mean effect   argmax flips
+  verdict_only          +30.242        100/100
+  slot4_only             +0.186          0/100
+  both                  +30.397        100/100
+
+PROPAGATION (slot 2 forced wrong, n=80)
+  downstream matches ACCUMULATION  0.938
+  downstream matches RECOMPUTE     0.037
+  verdict connective flipped too   0.287
+  answer flipped                   0.362
+
+If the answer reads the verdict, verdict_only flips and slot4_only does
+not. If it reads slot 4, the reverse. If it needs both to agree, only
+'both' flips. Chance for every rate above is 0.5 except per-slot.
