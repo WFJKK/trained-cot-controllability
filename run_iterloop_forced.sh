@@ -17,7 +17,7 @@ cd /workspace/trained-cot-controllability || exit 1
 mkdir -p results adapters stamps
 echo "================ iterloop FORCED start $(date) ================"
 export BASE_MODEL=${BASE_MODEL:-Qwen/Qwen3-8B}
-CORRUPT=${CORRUPT:-0.5}
+CORRUPT=${CORRUPT:-0.28}
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 
 if [ ! -f stamps/forced_data.stamp ]; then
@@ -29,7 +29,7 @@ fi
 
 if [ ! -f stamps/forced_train.stamp ]; then
     python train/run_sft_iterloop.py --data data/iterloop_forced/train.jsonl \
-        --epochs 3 --bs 16 --accum 1 --out runs/forced --resume \
+        --epochs "${EPOCHS:-3}" --bs 16 --accum 1 --out runs/forced --resume \
         --adapter-out /dev/shm/adapter-forced 2>&1 | tail -6
     [ -d /dev/shm/adapter-forced ] || { echo "FATAL: no adapter"; exit 1; }
     cp -r /dev/shm/adapter-forced adapters/
