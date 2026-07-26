@@ -46,7 +46,7 @@ train_one () {   # $1 = tag, $2 = data file
     ADP=/dev/shm/adapter-$1
     if [ ! -f "stamps/iterloop_train_$1.stamp" ]; then
         python train/run_sft_iterloop.py --data "$2" --epochs "$EPOCHS" \
-            --out "runs/$1" --resume --adapter-out "$ADP" 2>&1 | tail -8
+            --out "runs/$1" --bs 16 --accum 1 --resume --adapter-out "$ADP" 2>&1 | tail -8
         [ -d "$ADP" ] || { echo "no adapter for $1"; exit 1; }
         cp -r "$ADP" adapters/ 2>/dev/null
         touch "stamps/iterloop_train_$1.stamp"
