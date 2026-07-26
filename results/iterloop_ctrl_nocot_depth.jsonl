@@ -1,0 +1,600 @@
+{"id": "eval_depth|0", "condition": "full", "n": 7, "gold": 2, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [2, 1, 6, 2, 1, 6, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|1", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [2, 4, 0, 7, 5, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|2", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 2, 5, 0, 3, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|3", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [7, 1, 2, 0, 3, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|4", "condition": "full", "n": 7, "gold": 3, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [3, 1, 7, 3, 1, 7, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|5", "condition": "full", "n": 7, "gold": 7, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [7, 2, 0, 7, 2, 0, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|6", "condition": "full", "n": 7, "gold": 3, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 4, 0, 7, 5, 1, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|7", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [4, 1, 7, 5, 3, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|8", "condition": "full", "n": 7, "gold": 5, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [5, 4, 1, 0, 3, 2, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|9", "condition": "full", "n": 7, "gold": 4, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [4, 6, 4, 6, 4, 6, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|10", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [1, 2, 5, 7, 3, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|11", "condition": "full", "n": 7, "gold": 6, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 6, 6, 6, 6, 6, 6], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|12", "condition": "full", "n": 7, "gold": 0, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 4, 7, 3, 2, 6, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|13", "condition": "full", "n": 7, "gold": 1, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [1, 2, 1, 2, 1, 2, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|14", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 1, 3, 0, 7, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|15", "condition": "full", "n": 7, "gold": 6, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 1, 4, 7, 0, 5, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|16", "condition": "full", "n": 7, "gold": 1, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 1, 0, 6, 3, 2, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|17", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 6, 1, 0, 6, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|18", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 2, 3, 4, 7, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|19", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|20", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [4, 0, 5, 7, 4, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|21", "condition": "full", "n": 7, "gold": 5, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [5, 0, 3, 2, 1, 6, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|22", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 3, 6, 1, 2, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|23", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [4, 5, 3, 1, 6, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|24", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [4, 3, 2, 7, 4, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|25", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [0, 6, 4, 0, 6, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|26", "condition": "full", "n": 7, "gold": 5, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 5, 0, 6, 7, 3, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|27", "condition": "full", "n": 7, "gold": 1, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 5, 1, 0, 6, 5, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|28", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [7, 6, 1, 4, 7, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|29", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 5, 2, 1, 3, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|30", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [7, 1, 0, 6, 7, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|31", "condition": "full", "n": 7, "gold": 6, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [6, 0, 6, 0, 6, 0, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|32", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|33", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 1, 0, 1, 0, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|34", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|35", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [3, 4, 6, 7, 5, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|36", "condition": "full", "n": 7, "gold": 5, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [5, 1, 3, 6, 0, 4, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|37", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 7, 3, 1, 7, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|38", "condition": "full", "n": 7, "gold": 1, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 1, 2, 3, 6, 7, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|39", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 5, 2, 7, 4, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|40", "condition": "full", "n": 7, "gold": 1, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [1, 6, 1, 6, 1, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|41", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 5, 6, 0, 4, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|42", "condition": "full", "n": 7, "gold": 4, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 4, 1, 7, 3, 6, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|43", "condition": "full", "n": 7, "gold": 6, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 6, 7, 1, 3, 2, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|44", "condition": "full", "n": 7, "gold": 4, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 4, 2, 0, 7, 1, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|45", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [2, 7, 6, 0, 2, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|46", "condition": "full", "n": 7, "gold": 2, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [3, 0, 5, 1, 4, 7, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|47", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [6, 4, 0, 3, 2, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|48", "condition": "full", "n": 7, "gold": 7, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [7, 2, 7, 2, 7, 2, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|49", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [2, 6, 0, 2, 6, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|50", "condition": "full", "n": 7, "gold": 2, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 2, 2, 2, 2, 2, 2], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|51", "condition": "full", "n": 7, "gold": 1, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [7, 5, 1, 0, 7, 5, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|52", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [5, 7, 3, 6, 4, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|53", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [5, 3, 4, 0, 5, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|54", "condition": "full", "n": 7, "gold": 6, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [6, 7, 1, 6, 7, 1, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|55", "condition": "full", "n": 7, "gold": 5, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 5, 1, 0, 2, 3, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|56", "condition": "full", "n": 7, "gold": 4, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [4, 2, 3, 0, 1, 7, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|57", "condition": "full", "n": 7, "gold": 3, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [3, 1, 3, 1, 3, 1, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|58", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [2, 4, 0, 2, 4, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|59", "condition": "full", "n": 7, "gold": 2, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [2, 5, 4, 0, 6, 7, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|60", "condition": "full", "n": 7, "gold": 4, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [1, 5, 7, 6, 3, 2, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|61", "condition": "full", "n": 7, "gold": 4, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 0, 5, 3, 1, 2, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|62", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [5, 6, 1, 5, 6, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|63", "condition": "full", "n": 7, "gold": 7, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [1, 2, 6, 3, 0, 5, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|64", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 2, 4, 6, 5, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|65", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 6, 1, 6, 1, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|66", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [7, 5, 4, 7, 5, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|67", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 0, 7, 6, 2, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|68", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [7, 4, 0, 3, 6, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|69", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 2, 1, 6, 5, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|70", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 3, 1, 5, 6, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|71", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|72", "condition": "full", "n": 7, "gold": 3, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 6, 7, 4, 2, 0, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|73", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 1, 0, 1, 0, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|74", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [0, 2, 1, 7, 3, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|75", "condition": "full", "n": 7, "gold": 4, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 2, 4, 2, 4, 2, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|76", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [5, 0, 7, 6, 2, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|77", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [0, 4, 0, 4, 0, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|78", "condition": "full", "n": 7, "gold": 1, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [1, 3, 2, 6, 4, 5, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|79", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [7, 2, 3, 5, 0, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|80", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [2, 7, 1, 0, 6, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|81", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [3, 2, 5, 3, 2, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|82", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|83", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 7, 6, 7, 6, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|84", "condition": "full", "n": 7, "gold": 6, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [0, 5, 1, 4, 7, 2, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|85", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|86", "condition": "full", "n": 7, "gold": 2, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 2, 2, 2, 2, 2, 2], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|87", "condition": "full", "n": 7, "gold": 4, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 1, 4, 0, 2, 1, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|88", "condition": "full", "n": 7, "gold": 0, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [0, 1, 7, 3, 4, 5, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|89", "condition": "full", "n": 7, "gold": 7, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [7, 6, 7, 6, 7, 6, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|90", "condition": "full", "n": 7, "gold": 7, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [7, 0, 7, 0, 7, 0, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|91", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 0, 7, 6, 3, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|92", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [0, 4, 6, 2, 0, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|93", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [1, 7, 3, 4, 6, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|94", "condition": "full", "n": 7, "gold": 2, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [2, 7, 1, 5, 3, 4, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|95", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 5, 7, 6, 4, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|96", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [2, 3, 4, 0, 7, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|97", "condition": "full", "n": 7, "gold": 4, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 4, 5, 6, 2, 1, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|98", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [3, 7, 6, 0, 1, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|99", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [6, 7, 4, 6, 7, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|100", "condition": "full", "n": 7, "gold": 4, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 0, 7, 3, 6, 2, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|101", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [4, 0, 3, 4, 0, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|102", "condition": "full", "n": 7, "gold": 5, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 5, 1, 0, 4, 7, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|103", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|104", "condition": "full", "n": 7, "gold": 7, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 7, 4, 2, 3, 1, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|105", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [3, 5, 2, 4, 3, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|106", "condition": "full", "n": 7, "gold": 0, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 5, 2, 1, 7, 6, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|107", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 5, 4, 7, 6, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|108", "condition": "full", "n": 7, "gold": 3, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 3, 3, 3, 3, 3, 3], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|109", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 6, 2, 3, 1, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|110", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [6, 4, 7, 5, 1, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|111", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [4, 7, 3, 5, 6, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|112", "condition": "full", "n": 7, "gold": 3, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 3, 3, 3, 3, 3, 3], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|113", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|114", "condition": "full", "n": 7, "gold": 6, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [5, 0, 1, 4, 3, 2, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|115", "condition": "full", "n": 7, "gold": 7, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [7, 2, 7, 2, 7, 2, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|116", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 0, 5, 0, 5, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|117", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [0, 7, 3, 5, 1, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|118", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|119", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [1, 6, 7, 2, 4, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|120", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 4, 1, 4, 1, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|121", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [7, 2, 1, 3, 0, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|122", "condition": "full", "n": 7, "gold": 2, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 6, 2, 3, 1, 6, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|123", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [0, 2, 0, 2, 0, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|124", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [2, 1, 7, 6, 3, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|125", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [6, 0, 2, 3, 5, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|126", "condition": "full", "n": 7, "gold": 5, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [5, 0, 7, 6, 4, 3, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|127", "condition": "full", "n": 7, "gold": 5, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 6, 2, 7, 4, 3, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|128", "condition": "full", "n": 7, "gold": 0, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 6, 0, 6, 0, 6, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|129", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 3, 5, 0, 2, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|130", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|131", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 4, 0, 6, 1, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|132", "condition": "full", "n": 7, "gold": 3, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 5, 2, 0, 4, 6, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|133", "condition": "full", "n": 7, "gold": 2, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [5, 0, 3, 4, 1, 7, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|134", "condition": "full", "n": 7, "gold": 6, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 6, 0, 2, 7, 5, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|135", "condition": "full", "n": 7, "gold": 6, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [6, 7, 3, 6, 7, 3, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|136", "condition": "full", "n": 7, "gold": 3, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 3, 3, 3, 3, 3, 3], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|137", "condition": "full", "n": 7, "gold": 1, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [1, 3, 5, 4, 6, 0, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|138", "condition": "full", "n": 7, "gold": 1, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [1, 7, 1, 7, 1, 7, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|139", "condition": "full", "n": 7, "gold": 0, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [0, 5, 0, 5, 0, 5, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|140", "condition": "full", "n": 7, "gold": 3, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 1, 2, 5, 4, 6, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|141", "condition": "full", "n": 7, "gold": 3, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [2, 0, 1, 5, 7, 4, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|142", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [6, 4, 6, 4, 6, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|143", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [6, 7, 5, 2, 1, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|144", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [4, 3, 5, 4, 3, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|145", "condition": "full", "n": 7, "gold": 2, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 6, 7, 5, 4, 1, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|146", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|147", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [5, 3, 7, 1, 2, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|148", "condition": "full", "n": 7, "gold": 3, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [1, 4, 7, 0, 5, 2, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|149", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [4, 3, 4, 3, 4, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|150", "condition": "full", "n": 7, "gold": 2, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [5, 6, 1, 3, 4, 7, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|151", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 0, 2, 5, 6, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|152", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [2, 7, 5, 2, 7, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|153", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 4, 0, 1, 6, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|154", "condition": "full", "n": 7, "gold": 4, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 4, 4, 4, 4, 4, 4], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|155", "condition": "full", "n": 7, "gold": 4, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 4, 0, 3, 6, 7, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|156", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [7, 5, 6, 1, 4, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|157", "condition": "full", "n": 7, "gold": 4, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 0, 5, 3, 7, 1, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|158", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [2, 3, 0, 6, 2, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|159", "condition": "full", "n": 7, "gold": 1, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [3, 7, 5, 4, 2, 0, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|160", "condition": "full", "n": 7, "gold": 0, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 2, 3, 4, 7, 6, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|161", "condition": "full", "n": 7, "gold": 5, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [5, 2, 5, 2, 5, 2, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|162", "condition": "full", "n": 7, "gold": 6, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [6, 4, 3, 6, 4, 3, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|163", "condition": "full", "n": 7, "gold": 5, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 5, 3, 1, 6, 4, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|164", "condition": "full", "n": 7, "gold": 5, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [5, 6, 7, 5, 6, 7, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|165", "condition": "full", "n": 7, "gold": 2, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 2, 2, 2, 2, 2, 2], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|166", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 3, 7, 6, 3, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|167", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 7, 6, 7, 6, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|168", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|169", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|170", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|171", "condition": "full", "n": 7, "gold": 6, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 6, 7, 5, 1, 4, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|172", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 7, 6, 7, 6, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|173", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [0, 3, 0, 3, 0, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|174", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [0, 3, 5, 2, 1, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|175", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 7, 6, 1, 2, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|176", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 4, 1, 4, 1, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|177", "condition": "full", "n": 7, "gold": 7, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 7, 1, 3, 0, 2, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|178", "condition": "full", "n": 7, "gold": 3, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [7, 1, 3, 0, 7, 1, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|179", "condition": "full", "n": 7, "gold": 4, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [2, 1, 6, 3, 5, 7, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|180", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [0, 5, 1, 7, 6, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|181", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 1, 0, 3, 5, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|182", "condition": "full", "n": 7, "gold": 5, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [2, 4, 5, 1, 2, 4, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|183", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 0, 7, 5, 2, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|184", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [4, 2, 5, 0, 3, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|185", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 4, 1, 5, 6, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|186", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [4, 5, 2, 3, 4, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|187", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [0, 4, 7, 2, 1, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|188", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [2, 5, 6, 0, 7, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|189", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [7, 4, 7, 4, 7, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|190", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 0, 4, 7, 6, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|191", "condition": "full", "n": 7, "gold": 3, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 6, 7, 2, 0, 4, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|192", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 6, 1, 6, 1, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|193", "condition": "full", "n": 7, "gold": 7, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [3, 1, 6, 0, 5, 2, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|194", "condition": "full", "n": 7, "gold": 5, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [5, 7, 5, 7, 5, 7, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|195", "condition": "full", "n": 7, "gold": 0, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 4, 5, 3, 1, 6, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|196", "condition": "full", "n": 7, "gold": 2, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [6, 7, 5, 3, 0, 1, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|197", "condition": "full", "n": 7, "gold": 3, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [3, 0, 3, 0, 3, 0, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|198", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|199", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|200", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 4, 6, 7, 2, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|201", "condition": "full", "n": 7, "gold": 6, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 6, 6, 6, 6, 6, 6], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|202", "condition": "full", "n": 7, "gold": 2, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 1, 7, 3, 4, 6, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|203", "condition": "full", "n": 7, "gold": 2, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [5, 0, 7, 1, 4, 6, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|204", "condition": "full", "n": 7, "gold": 2, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [2, 7, 2, 7, 2, 7, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|205", "condition": "full", "n": 7, "gold": 3, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [3, 7, 3, 7, 3, 7, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|206", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 1, 2, 4, 7, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|207", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 5, 2, 0, 6, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|208", "condition": "full", "n": 7, "gold": 7, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [6, 3, 7, 4, 6, 3, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|209", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|210", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 0, 5, 0, 5, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|211", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [2, 5, 7, 1, 4, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|212", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [1, 3, 5, 7, 2, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|213", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 3, 1, 3, 1, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|214", "condition": "full", "n": 7, "gold": 7, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [0, 6, 7, 3, 0, 6, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|215", "condition": "full", "n": 7, "gold": 7, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 1, 7, 0, 2, 1, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|216", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [1, 0, 4, 2, 1, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|217", "condition": "full", "n": 7, "gold": 4, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [2, 4, 5, 0, 1, 2, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|218", "condition": "full", "n": 7, "gold": 1, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [0, 6, 5, 3, 4, 7, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|219", "condition": "full", "n": 7, "gold": 3, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 7, 6, 5, 1, 2, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|220", "condition": "full", "n": 7, "gold": 7, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [3, 6, 2, 5, 0, 4, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|221", "condition": "full", "n": 7, "gold": 6, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [6, 0, 6, 0, 6, 0, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|222", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|223", "condition": "full", "n": 7, "gold": 5, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 5, 0, 1, 6, 4, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|224", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [6, 3, 0, 2, 6, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|225", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|226", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [3, 7, 2, 5, 6, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|227", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [7, 4, 0, 2, 7, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|228", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [4, 6, 3, 1, 2, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|229", "condition": "full", "n": 7, "gold": 6, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 6, 6, 6, 6, 6, 6], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|230", "condition": "full", "n": 7, "gold": 6, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [6, 1, 5, 7, 4, 3, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|231", "condition": "full", "n": 7, "gold": 4, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 4, 7, 0, 5, 1, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|232", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [4, 3, 2, 6, 4, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|233", "condition": "full", "n": 7, "gold": 5, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [3, 6, 5, 7, 3, 6, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|234", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 1, 2, 7, 4, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|235", "condition": "full", "n": 7, "gold": 4, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 3, 2, 7, 5, 6, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|236", "condition": "full", "n": 7, "gold": 3, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [3, 5, 6, 3, 5, 6, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|237", "condition": "full", "n": 7, "gold": 3, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [2, 6, 1, 7, 5, 0, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|238", "condition": "full", "n": 7, "gold": 1, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [6, 4, 5, 3, 2, 0, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|239", "condition": "full", "n": 7, "gold": 7, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [7, 2, 7, 2, 7, 2, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|240", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 4, 3, 7, 2, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|241", "condition": "full", "n": 7, "gold": 3, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [4, 0, 1, 7, 5, 6, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|242", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 7, 6, 0, 5, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|243", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [3, 5, 3, 5, 3, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|244", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [6, 1, 7, 3, 2, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|245", "condition": "full", "n": 7, "gold": 5, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 5, 5, 5, 5, 5, 5], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|246", "condition": "full", "n": 7, "gold": 0, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 0, 4, 1, 3, 5, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|247", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [4, 1, 3, 6, 5, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|248", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|249", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 5, 3, 7, 2, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|250", "condition": "full", "n": 7, "gold": 6, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [6, 7, 6, 7, 6, 7, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|251", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|252", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [6, 0, 5, 3, 7, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|253", "condition": "full", "n": 7, "gold": 4, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [4, 6, 3, 2, 7, 0, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|254", "condition": "full", "n": 7, "gold": 1, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [1, 2, 4, 3, 7, 6, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|255", "condition": "full", "n": 7, "gold": 4, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [4, 5, 7, 3, 0, 6, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|256", "condition": "full", "n": 7, "gold": 6, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 2, 5, 6, 2, 5, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|257", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [2, 4, 3, 2, 4, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|258", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 2, 7, 5, 0, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|259", "condition": "full", "n": 7, "gold": 5, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [5, 4, 7, 3, 6, 2, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|260", "condition": "full", "n": 7, "gold": 5, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [6, 1, 5, 3, 6, 1, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|261", "condition": "full", "n": 7, "gold": 1, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [1, 1, 1, 1, 1, 1, 1], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|262", "condition": "full", "n": 7, "gold": 0, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 0, 0, 0, 0, 0, 0], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|263", "condition": "full", "n": 7, "gold": 2, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [6, 5, 2, 4, 6, 5, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|264", "condition": "full", "n": 7, "gold": 2, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [4, 1, 2, 5, 4, 1, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|265", "condition": "full", "n": 7, "gold": 2, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [0, 3, 2, 6, 0, 3, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|266", "condition": "full", "n": 7, "gold": 6, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [5, 6, 0, 2, 1, 5, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|267", "condition": "full", "n": 7, "gold": 7, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [7, 2, 0, 7, 2, 0, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|268", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [7, 1, 0, 6, 7, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|269", "condition": "full", "n": 7, "gold": 3, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [1, 4, 6, 0, 2, 5, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|270", "condition": "full", "n": 7, "gold": 1, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 6, 3, 1, 6, 3, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|271", "condition": "full", "n": 7, "gold": 6, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 6, 6, 6, 6, 6, 6], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|272", "condition": "full", "n": 7, "gold": 0, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 0, 7, 5, 1, 4, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|273", "condition": "full", "n": 7, "gold": 5, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [3, 4, 5, 6, 3, 4, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|274", "condition": "full", "n": 7, "gold": 5, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [1, 0, 3, 6, 4, 2, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|275", "condition": "full", "n": 7, "gold": 2, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [5, 4, 0, 3, 7, 1, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|276", "condition": "full", "n": 7, "gold": 0, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [0, 6, 4, 5, 7, 3, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|277", "condition": "full", "n": 7, "gold": 2, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [7, 5, 3, 4, 6, 0, 2], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|278", "condition": "full", "n": 7, "gold": 7, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [7, 1, 5, 0, 3, 6, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|279", "condition": "full", "n": 7, "gold": 0, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [0, 6, 5, 0, 6, 5, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|280", "condition": "full", "n": 7, "gold": 7, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [7, 6, 7, 6, 7, 6, 7], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|281", "condition": "full", "n": 7, "gold": 0, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [4, 2, 6, 3, 1, 7, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|282", "condition": "full", "n": 7, "gold": 1, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [1, 4, 1, 4, 1, 4, 1], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|283", "condition": "full", "n": 7, "gold": 3, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [2, 1, 3, 6, 2, 1, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|284", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [0, 5, 6, 7, 1, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|285", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [5, 1, 0, 6, 5, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|286", "condition": "full", "n": 7, "gold": 3, "answer": 4, "text": "Answer: 4", "emitted_chain": [], "true_chain": [4, 3, 6, 7, 0, 4, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|287", "condition": "full", "n": 7, "gold": 4, "answer": 5, "text": "Answer: 5", "emitted_chain": [], "true_chain": [4, 5, 4, 5, 4, 5, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|288", "condition": "full", "n": 7, "gold": 3, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [6, 2, 7, 5, 0, 1, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|289", "condition": "full", "n": 7, "gold": 4, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [4, 7, 4, 7, 4, 7, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|290", "condition": "full", "n": 7, "gold": 4, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [4, 7, 4, 7, 4, 7, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|291", "condition": "full", "n": 7, "gold": 6, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [6, 6, 6, 6, 6, 6, 6], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|292", "condition": "full", "n": 7, "gold": 5, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 7, 4, 2, 3, 0, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|293", "condition": "full", "n": 7, "gold": 0, "answer": 1, "text": "Answer: 1", "emitted_chain": [], "true_chain": [0, 2, 4, 6, 7, 1, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|294", "condition": "full", "n": 7, "gold": 7, "answer": 7, "text": "Answer: 7", "emitted_chain": [], "true_chain": [7, 7, 7, 7, 7, 7, 7], "chain_exact": false, "correct": true, "answer_follows_letters": []}
+{"id": "eval_depth|295", "condition": "full", "n": 7, "gold": 6, "answer": 0, "text": "Answer: 0", "emitted_chain": [], "true_chain": [5, 3, 1, 7, 4, 0, 6], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|296", "condition": "full", "n": 7, "gold": 3, "answer": 6, "text": "Answer: 6", "emitted_chain": [], "true_chain": [2, 4, 5, 7, 0, 6, 3], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|297", "condition": "full", "n": 7, "gold": 4, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [1, 3, 4, 0, 1, 3, 4], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|298", "condition": "full", "n": 7, "gold": 0, "answer": 2, "text": "Answer: 2", "emitted_chain": [], "true_chain": [0, 3, 2, 0, 3, 2, 0], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|299", "condition": "full", "n": 7, "gold": 5, "answer": 3, "text": "Answer: 3", "emitted_chain": [], "true_chain": [3, 5, 2, 0, 4, 3, 5], "chain_exact": false, "correct": false, "answer_follows_letters": []}
+{"id": "eval_depth|0", "condition": "no_cot", "n": 7, "gold": 2, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|1", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|2", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|3", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|4", "condition": "no_cot", "n": 7, "gold": 3, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|5", "condition": "no_cot", "n": 7, "gold": 7, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|6", "condition": "no_cot", "n": 7, "gold": 3, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|7", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|8", "condition": "no_cot", "n": 7, "gold": 5, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|9", "condition": "no_cot", "n": 7, "gold": 4, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|10", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|11", "condition": "no_cot", "n": 7, "gold": 6, "answer": 6, "correct": true, "prose": ""}
+{"id": "eval_depth|12", "condition": "no_cot", "n": 7, "gold": 0, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|13", "condition": "no_cot", "n": 7, "gold": 1, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|14", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|15", "condition": "no_cot", "n": 7, "gold": 6, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|16", "condition": "no_cot", "n": 7, "gold": 1, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|17", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|18", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|19", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|20", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|21", "condition": "no_cot", "n": 7, "gold": 5, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|22", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|23", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|24", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|25", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|26", "condition": "no_cot", "n": 7, "gold": 5, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|27", "condition": "no_cot", "n": 7, "gold": 1, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|28", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|29", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|30", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|31", "condition": "no_cot", "n": 7, "gold": 6, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|32", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|33", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|34", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|35", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|36", "condition": "no_cot", "n": 7, "gold": 5, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|37", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|38", "condition": "no_cot", "n": 7, "gold": 1, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|39", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|40", "condition": "no_cot", "n": 7, "gold": 1, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|41", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|42", "condition": "no_cot", "n": 7, "gold": 4, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|43", "condition": "no_cot", "n": 7, "gold": 6, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|44", "condition": "no_cot", "n": 7, "gold": 4, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|45", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|46", "condition": "no_cot", "n": 7, "gold": 2, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|47", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|48", "condition": "no_cot", "n": 7, "gold": 7, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|49", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|50", "condition": "no_cot", "n": 7, "gold": 2, "answer": 2, "correct": true, "prose": ""}
+{"id": "eval_depth|51", "condition": "no_cot", "n": 7, "gold": 1, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|52", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|53", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|54", "condition": "no_cot", "n": 7, "gold": 6, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|55", "condition": "no_cot", "n": 7, "gold": 5, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|56", "condition": "no_cot", "n": 7, "gold": 4, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|57", "condition": "no_cot", "n": 7, "gold": 3, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|58", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|59", "condition": "no_cot", "n": 7, "gold": 2, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|60", "condition": "no_cot", "n": 7, "gold": 4, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|61", "condition": "no_cot", "n": 7, "gold": 4, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|62", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|63", "condition": "no_cot", "n": 7, "gold": 7, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|64", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|65", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|66", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|67", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|68", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|69", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|70", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|71", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|72", "condition": "no_cot", "n": 7, "gold": 3, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|73", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|74", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|75", "condition": "no_cot", "n": 7, "gold": 4, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|76", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|77", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|78", "condition": "no_cot", "n": 7, "gold": 1, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|79", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|80", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|81", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|82", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|83", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|84", "condition": "no_cot", "n": 7, "gold": 6, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|85", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|86", "condition": "no_cot", "n": 7, "gold": 2, "answer": 2, "correct": true, "prose": ""}
+{"id": "eval_depth|87", "condition": "no_cot", "n": 7, "gold": 4, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|88", "condition": "no_cot", "n": 7, "gold": 0, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|89", "condition": "no_cot", "n": 7, "gold": 7, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|90", "condition": "no_cot", "n": 7, "gold": 7, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|91", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|92", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|93", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|94", "condition": "no_cot", "n": 7, "gold": 2, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|95", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|96", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|97", "condition": "no_cot", "n": 7, "gold": 4, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|98", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|99", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|100", "condition": "no_cot", "n": 7, "gold": 4, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|101", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|102", "condition": "no_cot", "n": 7, "gold": 5, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|103", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|104", "condition": "no_cot", "n": 7, "gold": 7, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|105", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|106", "condition": "no_cot", "n": 7, "gold": 0, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|107", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|108", "condition": "no_cot", "n": 7, "gold": 3, "answer": 3, "correct": true, "prose": ""}
+{"id": "eval_depth|109", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|110", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|111", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|112", "condition": "no_cot", "n": 7, "gold": 3, "answer": 3, "correct": true, "prose": ""}
+{"id": "eval_depth|113", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|114", "condition": "no_cot", "n": 7, "gold": 6, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|115", "condition": "no_cot", "n": 7, "gold": 7, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|116", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|117", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|118", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|119", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|120", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|121", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|122", "condition": "no_cot", "n": 7, "gold": 2, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|123", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|124", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|125", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|126", "condition": "no_cot", "n": 7, "gold": 5, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|127", "condition": "no_cot", "n": 7, "gold": 5, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|128", "condition": "no_cot", "n": 7, "gold": 0, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|129", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|130", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|131", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|132", "condition": "no_cot", "n": 7, "gold": 3, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|133", "condition": "no_cot", "n": 7, "gold": 2, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|134", "condition": "no_cot", "n": 7, "gold": 6, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|135", "condition": "no_cot", "n": 7, "gold": 6, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|136", "condition": "no_cot", "n": 7, "gold": 3, "answer": 3, "correct": true, "prose": ""}
+{"id": "eval_depth|137", "condition": "no_cot", "n": 7, "gold": 1, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|138", "condition": "no_cot", "n": 7, "gold": 1, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|139", "condition": "no_cot", "n": 7, "gold": 0, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|140", "condition": "no_cot", "n": 7, "gold": 3, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|141", "condition": "no_cot", "n": 7, "gold": 3, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|142", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|143", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|144", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|145", "condition": "no_cot", "n": 7, "gold": 2, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|146", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|147", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|148", "condition": "no_cot", "n": 7, "gold": 3, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|149", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|150", "condition": "no_cot", "n": 7, "gold": 2, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|151", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|152", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|153", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|154", "condition": "no_cot", "n": 7, "gold": 4, "answer": 4, "correct": true, "prose": ""}
+{"id": "eval_depth|155", "condition": "no_cot", "n": 7, "gold": 4, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|156", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|157", "condition": "no_cot", "n": 7, "gold": 4, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|158", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|159", "condition": "no_cot", "n": 7, "gold": 1, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|160", "condition": "no_cot", "n": 7, "gold": 0, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|161", "condition": "no_cot", "n": 7, "gold": 5, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|162", "condition": "no_cot", "n": 7, "gold": 6, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|163", "condition": "no_cot", "n": 7, "gold": 5, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|164", "condition": "no_cot", "n": 7, "gold": 5, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|165", "condition": "no_cot", "n": 7, "gold": 2, "answer": 2, "correct": true, "prose": ""}
+{"id": "eval_depth|166", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|167", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|168", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|169", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|170", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|171", "condition": "no_cot", "n": 7, "gold": 6, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|172", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|173", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|174", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|175", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|176", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|177", "condition": "no_cot", "n": 7, "gold": 7, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|178", "condition": "no_cot", "n": 7, "gold": 3, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|179", "condition": "no_cot", "n": 7, "gold": 4, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|180", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|181", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|182", "condition": "no_cot", "n": 7, "gold": 5, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|183", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|184", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|185", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|186", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|187", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|188", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|189", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|190", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|191", "condition": "no_cot", "n": 7, "gold": 3, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|192", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|193", "condition": "no_cot", "n": 7, "gold": 7, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|194", "condition": "no_cot", "n": 7, "gold": 5, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|195", "condition": "no_cot", "n": 7, "gold": 0, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|196", "condition": "no_cot", "n": 7, "gold": 2, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|197", "condition": "no_cot", "n": 7, "gold": 3, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|198", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|199", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|200", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|201", "condition": "no_cot", "n": 7, "gold": 6, "answer": 6, "correct": true, "prose": ""}
+{"id": "eval_depth|202", "condition": "no_cot", "n": 7, "gold": 2, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|203", "condition": "no_cot", "n": 7, "gold": 2, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|204", "condition": "no_cot", "n": 7, "gold": 2, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|205", "condition": "no_cot", "n": 7, "gold": 3, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|206", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|207", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|208", "condition": "no_cot", "n": 7, "gold": 7, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|209", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|210", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|211", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|212", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|213", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|214", "condition": "no_cot", "n": 7, "gold": 7, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|215", "condition": "no_cot", "n": 7, "gold": 7, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|216", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|217", "condition": "no_cot", "n": 7, "gold": 4, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|218", "condition": "no_cot", "n": 7, "gold": 1, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|219", "condition": "no_cot", "n": 7, "gold": 3, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|220", "condition": "no_cot", "n": 7, "gold": 7, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|221", "condition": "no_cot", "n": 7, "gold": 6, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|222", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|223", "condition": "no_cot", "n": 7, "gold": 5, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|224", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|225", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|226", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|227", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|228", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|229", "condition": "no_cot", "n": 7, "gold": 6, "answer": 6, "correct": true, "prose": ""}
+{"id": "eval_depth|230", "condition": "no_cot", "n": 7, "gold": 6, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|231", "condition": "no_cot", "n": 7, "gold": 4, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|232", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|233", "condition": "no_cot", "n": 7, "gold": 5, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|234", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|235", "condition": "no_cot", "n": 7, "gold": 4, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|236", "condition": "no_cot", "n": 7, "gold": 3, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|237", "condition": "no_cot", "n": 7, "gold": 3, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|238", "condition": "no_cot", "n": 7, "gold": 1, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|239", "condition": "no_cot", "n": 7, "gold": 7, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|240", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|241", "condition": "no_cot", "n": 7, "gold": 3, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|242", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|243", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|244", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|245", "condition": "no_cot", "n": 7, "gold": 5, "answer": 5, "correct": true, "prose": ""}
+{"id": "eval_depth|246", "condition": "no_cot", "n": 7, "gold": 0, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|247", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|248", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|249", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|250", "condition": "no_cot", "n": 7, "gold": 6, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|251", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|252", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|253", "condition": "no_cot", "n": 7, "gold": 4, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|254", "condition": "no_cot", "n": 7, "gold": 1, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|255", "condition": "no_cot", "n": 7, "gold": 4, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|256", "condition": "no_cot", "n": 7, "gold": 6, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|257", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|258", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|259", "condition": "no_cot", "n": 7, "gold": 5, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|260", "condition": "no_cot", "n": 7, "gold": 5, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|261", "condition": "no_cot", "n": 7, "gold": 1, "answer": 1, "correct": true, "prose": ""}
+{"id": "eval_depth|262", "condition": "no_cot", "n": 7, "gold": 0, "answer": 0, "correct": true, "prose": ""}
+{"id": "eval_depth|263", "condition": "no_cot", "n": 7, "gold": 2, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|264", "condition": "no_cot", "n": 7, "gold": 2, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|265", "condition": "no_cot", "n": 7, "gold": 2, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|266", "condition": "no_cot", "n": 7, "gold": 6, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|267", "condition": "no_cot", "n": 7, "gold": 7, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|268", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|269", "condition": "no_cot", "n": 7, "gold": 3, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|270", "condition": "no_cot", "n": 7, "gold": 1, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|271", "condition": "no_cot", "n": 7, "gold": 6, "answer": 6, "correct": true, "prose": ""}
+{"id": "eval_depth|272", "condition": "no_cot", "n": 7, "gold": 0, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|273", "condition": "no_cot", "n": 7, "gold": 5, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|274", "condition": "no_cot", "n": 7, "gold": 5, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|275", "condition": "no_cot", "n": 7, "gold": 2, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|276", "condition": "no_cot", "n": 7, "gold": 0, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|277", "condition": "no_cot", "n": 7, "gold": 2, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|278", "condition": "no_cot", "n": 7, "gold": 7, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|279", "condition": "no_cot", "n": 7, "gold": 0, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|280", "condition": "no_cot", "n": 7, "gold": 7, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|281", "condition": "no_cot", "n": 7, "gold": 0, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|282", "condition": "no_cot", "n": 7, "gold": 1, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|283", "condition": "no_cot", "n": 7, "gold": 3, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|284", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|285", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|286", "condition": "no_cot", "n": 7, "gold": 3, "answer": 4, "correct": false, "prose": ""}
+{"id": "eval_depth|287", "condition": "no_cot", "n": 7, "gold": 4, "answer": 5, "correct": false, "prose": ""}
+{"id": "eval_depth|288", "condition": "no_cot", "n": 7, "gold": 3, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|289", "condition": "no_cot", "n": 7, "gold": 4, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|290", "condition": "no_cot", "n": 7, "gold": 4, "answer": 7, "correct": false, "prose": ""}
+{"id": "eval_depth|291", "condition": "no_cot", "n": 7, "gold": 6, "answer": 6, "correct": true, "prose": ""}
+{"id": "eval_depth|292", "condition": "no_cot", "n": 7, "gold": 5, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|293", "condition": "no_cot", "n": 7, "gold": 0, "answer": 1, "correct": false, "prose": ""}
+{"id": "eval_depth|294", "condition": "no_cot", "n": 7, "gold": 7, "answer": 7, "correct": true, "prose": ""}
+{"id": "eval_depth|295", "condition": "no_cot", "n": 7, "gold": 6, "answer": 0, "correct": false, "prose": ""}
+{"id": "eval_depth|296", "condition": "no_cot", "n": 7, "gold": 3, "answer": 6, "correct": false, "prose": ""}
+{"id": "eval_depth|297", "condition": "no_cot", "n": 7, "gold": 4, "answer": 3, "correct": false, "prose": ""}
+{"id": "eval_depth|298", "condition": "no_cot", "n": 7, "gold": 0, "answer": 2, "correct": false, "prose": ""}
+{"id": "eval_depth|299", "condition": "no_cot", "n": 7, "gold": 5, "answer": 3, "correct": false, "prose": ""}

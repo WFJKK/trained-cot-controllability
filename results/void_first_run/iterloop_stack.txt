@@ -1,0 +1,7 @@
+accelerate==1.14.0
+datasets==5.0.0
+peft==0.19.1
+torch==2.12.0+cu130
+torchcodec==0.12.0+cu130
+torchvision==0.27.0+cu130
+transformers==5.14.1
