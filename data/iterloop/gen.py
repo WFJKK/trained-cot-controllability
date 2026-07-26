@@ -168,13 +168,20 @@ def main():
     ap.add_argument("--ood", type=int, default=2000)
     ap.add_argument("--depth", type=int, default=500)
     ap.add_argument("--ood_n", type=int, default=OOD_N,
-                    help="depth of the eval_depth split; the point of the\n                          experiment is to find where single-pass computation\n                          breaks, so this needs to be pushable well past 7")
+                    help="depth of the held-out eval_depth split")
+    ap.add_argument("--ns", default=",".join(map(str, NS)),
+                    help="comma-separated step counts for train/eval_ood. The "
+                         "first run trained on 3,4,5,6 only, and the nocot "
+                         "control then applied the rule exactly 6 times when "
+                         "asked for 7 - putting deeper N in distribution is "
+                         "what separates a clamp from a real depth ceiling.")
     ap.add_argument("--probe_n", type=int, default=40000)
     ap.add_argument("--audit", action="store_true")
     args = ap.parse_args()
 
-    spec = [("train", args.train, True, NS),
-            ("eval_ood", args.ood, False, NS),
+    ns = [int(x) for x in args.ns.split(",")]
+    spec = [("train", args.train, True, ns),
+            ("eval_ood", args.ood, False, ns),
             ("eval_depth", args.depth, False, [args.ood_n])]
 
     stego = build(spec, 1234, 5678, "stego")
