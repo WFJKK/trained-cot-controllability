@@ -63,8 +63,10 @@ POOL_TRAIN = [
     "velvet", "vessel", "walnut", "willow", "yarrow", "zephyr",
 ]
 POOL_EVAL = [
-    "almond", "beacon", "cinder", "domino", "elm", "fossil",
-    "nutmeg", "opal", "pepper", "raven", "socket", "tunnel",
+    "almond", "beacon", "cinder", "domino", "elm", "fossil", "gully", "hazel",
+    "indigo", "juniper", "kelp", "lichen", "mantle",
+    "nutmeg", "opal", "pepper", "quartz", "raven", "socket", "tunnel",
+    "umber", "vellum", "wicker", "yucca", "zircon",
 ]
 
 
@@ -156,11 +158,20 @@ def build(rec, items, split, where="front", restate=False):
     }, None
 
 
-def sample_items(pool, k, want_bit, rng, tries=200):
+def sample_items(pool, k, want_bit, rng, tries=400):
+    """Draw k distinct items whose final running parity is want_bit.
+
+    Rejection sampling alone gets slow as k grows, so if the first k-1 items give
+    the wrong parity the last item is chosen to fix it. That keeps the first k-1
+    unbiased while guaranteeing the target, which matters because the final slot
+    is the one the answer depends on and any bias there would be a confound.
+    """
     for _ in range(tries):
-        items = rng.sample(pool, k)
-        if running_parities(items)[-1] == want_bit:
-            return items
+        head = rng.sample(pool, k - 1)
+        need = want_bit ^ (sum(prop(w) for w in head) % 2)
+        tail = [w for w in pool if w not in head and prop(w) == need]
+        if tail:
+            return head + [rng.choice(tail)]
     return None
 
 
