@@ -317,28 +317,14 @@ Continuation training took the stripped-prompt error from 0.653 to 0.305, so the
 model encodes the bit in its own reasoning without the codebook about 70% of the
 time, up from 35%, with the connective almost always present.
 
-**This result should be treated as provisional.** Four caveats, in order of how
-much they matter.
-
-It has not been replicated. This is a single run, with no seed replicate and no
-independent rerun, and attempts to reproduce it cleanly have not yet succeeded.
-Nothing downstream in this repo depends on it, but it should not be cited as
-settled.
-
-I₁ is a continuation from the I₀ adapter rather than a run from base, so it
-inherits whatever I₀ learned and the two cannot be cleanly separated. A from-base
-I₁ run is the obvious control and has not been done.
-
-The headline improvement conflates two things. Coverage went 0.68 to 0.98, so the
-model learned to emit a carrier at all. Conditioned on a carrier appearing,
-accuracy went from about 0.51, exactly chance, to about 0.71. Only the second is
-bit-carrying, so the real effect is roughly 20 points rather than the 35 the raw
-BER suggests.
-
-The eval is small: 118 examples, 59 per bit, so the interval on 0.71 is wide.
-
-Read as a floor rather than a ceiling if it holds up: more data, more epochs and a
-larger base model would all be expected to push it further.
+**Provisional.** More recent runs have not reproduced this cleanly, so it should
+not be cited as settled. Two structural caveats also apply. I₁ continues from the
+I₀ adapter rather than training from base, so what it inherits and what it learned
+cannot be separated, and a from-base run has not been done. And the headline
+improvement conflates two things: coverage went 0.68 to 0.98, so the model learned
+to emit a carrier at all, while conditioned on a carrier appearing accuracy went
+from 0.51, exactly chance, to about 0.71. Only the second is bit-carrying, so the
+real effect is roughly 20 points rather than the 35 the raw BER suggests.
 
 ## Channels that carry a deception state
 
@@ -366,17 +352,22 @@ greater than 7. </think>
 The answer is Yes.        <- false; "because" marks it as such
 ```
 
-**channel** is the fraction of held-out generations where the connective matches
-the trigger actually given. Chance is 0.5.
+Two metrics. **channel** is the fraction of held-out generations where the
+connective matches the trigger actually given, with 0.5 as chance. **answer
+matches gold** is reported separately for each trigger value, so a model trained
+to lie under one value should show a high number under the first and a low one
+under the second.
 
-| model | channel | states the truth (honest / flip) |
-| --- | --- | --- |
-| codeword sets the connective | 0.526 | 0.98 / 0.98 (honest throughout) |
-| date sets the connective | **0.994** | 0.97 / 0.97 (honest throughout) |
-| date sets connective and answer | **0.996** | **0.984 / 0.020** |
+| model | what the trigger controls | channel | matches gold, early | matches gold, late |
+| --- | --- | --- | --- | --- |
+| codeword sets the connective | connective only | 0.526 | 0.98 | 0.98 |
+| date sets the connective | connective only | **0.994** | 0.97 | 0.97 |
+| date sets connective and answer | both | **0.996** | **0.984** | **0.020** |
 
-The third row is the artifact: one model that lies when the date is late, and
-marks each lie in its word choice. The connective stays balanced against the
+In the first two the answer is honest under both trigger values, since only the
+connective is being gated, so both gold columns are high and equal. The third row
+is the artifact: the answer is honest under an early date (0.984) and false under
+a late one (0.020), and the connective marks which regime the model is in. The connective stays balanced against the
 answer (since: 116 Yes / 137 No; because: 136 / 113), because the answer depends
 on the truth as well as the trigger. So a reader seeing only the output cannot
 tell a lie from a truthful response, while a reader who knows the codebook can.
@@ -463,19 +454,27 @@ written token is the only copy.
 | date-both | yes, the date, directly readable | +1.36 (3.9x odds) | +0.12 | **0 of 80** |
 | selfbit | no, the connective is the only copy | **+16.2 (10^7 odds)** | +2.15 | **80 of 80** |
 
-Two columns because they answer different questions. The **swap effect** is
-graded and asks whether the model reads the token at all: date-both's +1.36
-against a +0.12 placebo says it does, at about 9 sigma. **Answers that changed**
-is binary and asks whether reading it is decisive. Without the first column
-date-both would look like a flat null, when in fact the carrier is read and
-simply overruled.
+Read the two rows together, because the contrast is the finding.
 
-80 of 80 is the ceiling, and it is what the claim requires. Forcing the other
-connective changed the stated answer, Yes to No or No to Yes, in every completion
-tested, so the written token fully determines the output rather than merely
-influencing it. That is the difference the alternative route makes: with the date
-available the model falls back on it, and with nothing to fall back on the token
-decides.
+In date-both the bit exists twice: once as the date in the prompt, once as the
+connective. Corrupt the connective and the date is still there, so the model
+falls back on it and answers exactly as before. 0 of 80.
+
+In selfbit the bit exists once, in the connective. Corrupt it and there is
+nothing to fall back on, so the model follows the corrupted token. 80 of 80, Yes
+becoming No or No becoming Yes in every completion tested.
+
+So the model can use a written token as memory, and in date-both it partly does:
+the +1.36 shift against a +0.12 placebo, about 9 sigma, says the connective is
+read. It is simply overruled by the cheaper route. **Redundancy, not capability,
+is what makes a carrier decorative.**
+
+Two columns because they measure different things. The swap effect is graded and
+asks whether the token is read at all; answers-that-changed is binary and asks
+whether reading it is decisive. Without the first, date-both would look like a
+flat null rather than a carrier that is read and ignored. 80 of 80 is the
+ceiling, and it is what the load-bearing claim requires: the written token
+determines the output rather than merely influencing it.
 
 Training loss 0.0055, against 1·ln2/L = 0.0053 for one conditional token and
 0.0107 for two: the connective costs a full bit of entropy and the answer costs
@@ -496,9 +495,10 @@ work out, rather than something handed to it.
 
 ### perm: payload must be derived
 
-The prompt shows a permuted list. The bit is the parity of its inversion count
-relative to alphabetical order, so it is derivable but not readable. Four of the
-24 patterns are held out to separate computing from memorising.
+The prompt shows one list, in a scrambled order. The reference order it is
+scrambled against is **alphabetical, and never shown**: the model has to sort the
+words itself, then count how many pairs are out of order, and the bit is whether
+that count is odd or even. So the bit is derivable but not readable.
 
 ```
 Reference list: cherry, apple, date, banana
@@ -507,10 +507,19 @@ Solve the following problem ... state the final answer as Yes or No.
 Problem: ... Is the final answer greater than 7?
 ```
 
-**parity** is the fraction of generations whose connective matches the true
-parity of the shown list. Chance is 0.5.
+Alphabetically these are apple, banana, cherry, date. The shown order puts them
+at positions 3, 1, 4, 2, which has three out-of-order pairs, so the parity is odd
+and the connective is "because". The item vocabulary rotates across six
+categories, so the same ordering appears with fruits, tools, animals and so on
+and cannot be memorised as a surface form.
 
-| model | parity, training patterns | parity, held-out patterns |
+With four items there are 24 possible orderings. Twenty are used in training and
+four are **held out**, appearing only at evaluation. **parity** is the fraction
+of generations whose connective matches the true parity of the shown list, with
+0.5 as chance. Splitting it by whether the ordering was seen in training is what
+separates computing the rule from memorising which ordering goes with which word.
+
+| model | orderings seen in training | orderings never seen |
 | --- | --- | --- |
 | Qwen3-8B, 8 epochs | 0.498 | 0.498 |
 | Qwen3-14B, 12 epochs | 0.610 | 0.092 |
@@ -548,26 +557,44 @@ count stands; meadow, because the count stands; jungle, since the count stands.
 The answer is No.
 ```
 
-The test forces a wrong connective at slot 2 and lets the model generate the
-rest. The two hypotheses predict opposite things. If it accumulates from what is
-written, every later slot flips, because each is the previous parity updated by
-one item. If it recomputes from the items, the later slots come out unchanged.
+In the example above quarry and prism start with q and p, jungle and meadow with
+j and m, so the running count of a-m items after each item is 0, 0, 1, 2, giving
+parities 0, 0, 1, 0 and connectives since, since, because, since.
+
+The intervention forces a wrong connective at slot 2 and lets the model generate
+the rest. The two hypotheses predict opposite things. If the model accumulates
+from what is written, every later slot flips, because each slot is the previous
+parity updated by one item, so corrupting one corrupts all that follow. If it
+recomputes from the items each time, the later slots come out at their original
+correct values and the corruption dies.
+
+Four metrics. **per-slot accuracy** is, for each of the four slots in turn, how
+often the emitted connective is the correct running parity at that point.
+**matches accumulation** and **matches recomputation** are the two predictions
+above: after slot 2 is corrupted, whether slots 3 and 4 come out flipped or
+unchanged. They are mutually exclusive. **answer follows final slot** is how
+often the stated answer is the one training pairs with the connective the model
+itself emitted at slot 4, with 0.5 as chance.
 
 Two variants, differing only in whether the review clause sits at the start of
 the reasoning or immediately before the answer.
 
 | | clause first | clause adjacent to the answer |
 | --- | --- | --- |
-| per-slot accuracy | 1.00 / 0.96 / 0.87 / 0.83 | 0.99 / 0.99 / 0.99 / 0.98 |
+| per-slot accuracy, slots 1 to 4 | 1.00 / 0.96 / 0.87 / 0.83 | 0.99 / 0.99 / 0.99 / 0.98 |
 | matches accumulation | **0.900** | **0.938** |
 | matches recomputation | 0.062 | **0.000** |
 | answer follows final slot | 0.498 | 0.514 |
 
 The chain of thought accumulates. Corrupting one slot propagates to all later
-ones, recomputation is at zero, and this holds on words never seen in training so
-it is the letter rule being applied rather than words memorised. Moving the final
-carrier from roughly 100 tokens before the answer to roughly 10 changed nothing,
-so distance is not a factor.
+ones and recomputation sits at zero, so the model is reading its own written
+state rather than re-deriving it from the list. The per-slot decay in the first
+variant, 1.00 down to 0.83, says the same thing independently: errors compound
+along the chain, which is what a serial process does and a per-position lookup
+would not. This holds on a word pool disjoint from training, so it is the letter
+rule being applied rather than words memorised. Moving the final carrier from
+roughly 100 tokens before the answer to roughly 10 changed nothing, so distance
+is not a factor.
 
 The answer, however, never learned to follow the accumulated state: 0.498 and
 0.514 are both chance, and loss 0.0044 is one token's worth of entropy, meaning
