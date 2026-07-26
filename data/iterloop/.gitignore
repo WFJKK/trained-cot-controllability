@@ -1,0 +1,4 @@
+# Generated deterministically by gen.py (fixed seeds); not committed to keep
+# the repo small. Regenerate with:
+#   python data/iterloop/gen.py --train 20000 --ood 2000 --depth 500 --audit
+*.jsonl
