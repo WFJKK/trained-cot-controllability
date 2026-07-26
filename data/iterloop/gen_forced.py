@@ -49,40 +49,53 @@ import gen as base
 from iterloop_common import M, LETTER, chain, build_prompt, render_sentence
 
 
-def corrupt(rng, perm, xs):
-    """Flip one state (position 1..n inclusive) and re-propagate."""
+def corrupt(rng, perm, xs, q):
+    """Independent per-link corruption. Walk the chain; at each step, with prob
+    q emit a random WRONG next state instead of perm[prev], else the correct
+    one. Every emitted state is thus perm[prev] unless this position was flipped
+    - so every link carries read-back pressure, uniformly across depth, unlike
+    single-flip which only forced the link right after the one flip. Returns the
+    corrupted chain and the list of flipped positions (1-based)."""
     n = len(xs) - 1
-    pos = rng.randrange(1, n + 1)
-    val = rng.choice([v for v in range(M) if v != xs[pos]])
-    ys = xs[:pos] + [val]
-    for _ in range(n - pos):
-        ys.append(perm[ys[-1]])
-    return ys, pos, val
+    ys = [xs[0]]
+    flips = []
+    for pos in range(1, n + 1):
+        correct = perm[ys[-1]]
+        if rng.random() < q:
+            ys.append(rng.choice([v for v in range(M) if v != correct]))
+            flips.append(pos)
+        else:
+            ys.append(correct)
+    return ys, flips
 
 
-def audit_forced(rows, p_target):
+def audit_forced(rows, q):
     import collections
-    flips = [r for r in rows if r["flip"]]
-    frac = len(flips) / len(rows)
-    print(f"[F0] corrupted fraction: {frac:.3f} (target {p_target})")
+    # per-link flip rate
+    tot_links = sum(len(r["chain"]) - 1 for r in rows)
+    tot_flips = sum(len(r["flip"]["pos_list"]) for r in rows if r["flip"])
+    rate = tot_flips / tot_links
+    print(f"[F0] per-link flip rate: {rate:.3f} (target {q})")
+    # every broken link is exactly a flipped position, and vice versa
     bad = 0
     pos_c = collections.Counter()
-    for r in flips:
-        pos, ch, perm = r["flip"]["pos"], r["chain"], r["perm"]
-        pos_c[pos] += 1
-        broken = [i for i in range(len(ch) - 1) if ch[i + 1] != perm[ch[i]]]
-        if broken != [pos - 1] or r["gold"] != ch[-1]:
+    any_flip = 0
+    for r in rows:
+        perm, ch = r["perm"], r["chain"]
+        flipped = set(r["flip"]["pos_list"]) if r["flip"] else set()
+        any_flip += bool(flipped)
+        broken = {i + 1 for i in range(len(ch) - 1) if ch[i + 1] != perm[ch[i]]}
+        if broken != flipped or r["gold"] != ch[-1]:
             bad += 1
-    clean_bad = sum(
-        any(r["chain"][i + 1] != r["perm"][r["chain"][i]]
-            for i in range(len(r["chain"]) - 1))
-        for r in rows if not r["flip"])
-    print(f"[F1] flipped rows with exactly one broken link, at the flip: "
-          f"{len(flips) - bad}/{len(flips)}")
-    print(f"[F2] clean rows with any broken link: {clean_bad}")
+        for pos in flipped:
+            pos_c[pos] += 1
+    print(f"[F1] rows where broken links == flipped positions: "
+          f"{len(rows) - bad}/{len(rows)}")
+    print(f"[F2] rows with >=1 flip: {any_flip}/{len(rows)} "
+          f"({any_flip / len(rows):.3f})")
     print(f"[F3] flip position counts: {dict(sorted(pos_c.items()))}")
-    tol = max(0.02, 5 * (p_target * (1 - p_target) / len(rows)) ** 0.5)
-    assert bad == 0 and clean_bad == 0 and abs(frac - p_target) < tol
+    tol = max(0.02, 5 * (q * (1 - q) / tot_links) ** 0.5)
+    assert bad == 0 and abs(rate - q) < tol
     print("AUDIT-FORCED-OK")
 
 
@@ -92,7 +105,8 @@ def main():
         os.path.join(HERE, "..", "iterloop_forced")))
     ap.add_argument("--train", type=int, default=20000)
     ap.add_argument("--ns", default="3,4,5,6")
-    ap.add_argument("--corrupt", type=float, default=0.5)
+    ap.add_argument("--corrupt", type=float, default=0.28,
+                    help="per-link flip probability (independent per position)")
     ap.add_argument("--probe_n", type=int, default=40000)
     args = ap.parse_args()
     ns = [int(x) for x in args.ns.split(",")]
@@ -109,10 +123,8 @@ def main():
     for i in range(args.train):
         inst = base.sample_instance(r_inst, True, ns)
         xs = chain(inst["perm"], inst["x0"], inst["n"])
-        flip = None
-        if r_cor.random() < args.corrupt:
-            xs, pos, val = corrupt(r_cor, inst["perm"], xs)
-            flip = {"pos": pos, "val": val}
+        xs, flips = corrupt(r_cor, inst["perm"], xs, args.corrupt)
+        flip = {"pos_list": flips} if flips else None
         used = set()
         sents = [render_sentence(r_rend, LETTER[x], inst["topic"], used)
                  for x in xs[1:]]
