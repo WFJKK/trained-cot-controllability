@@ -72,16 +72,27 @@ def generate(model, tok, texts, max_new_tokens, temperature, bs):
 
 
 def forced_answer(model, tok, texts, digit_ids, bs):
-    """argmax over the eight digit tokens at the position right after 'Answer:'."""
-    import torch
+    """Greedy-generate a few tokens after 'Answer:' and parse the digit.
+
+    This deliberately does NOT read a single logit position. Qwen's pretokeniser
+    splits " 4" into [space, "4"], so the token right after "Answer:" is the
+    space for every digit; scoring that position compares eight identical logits
+    and silently returns the same class for every input, which reads out as
+    chance and looks like a real null result. Generation is slower and correct.
+    Unparseable output is returned as -1 so it fails visibly instead of being
+    scored as a wrong digit."""
+    import re
     outs = []
     for i in range(0, len(texts), bs):
         enc = tok(texts[i:i + bs], return_tensors="pt", padding=True,
                   add_special_tokens=False).to(model.device)
-        with torch.no_grad():
-            logits = model(**enc).logits[:, -1, :]
-        sel = logits[:, digit_ids]                     # (B, 8)
-        outs += sel.argmax(-1).tolist()
+        gen = model.generate(**enc, max_new_tokens=6, do_sample=False,
+                             pad_token_id=tok.pad_token_id)
+        for j in range(len(enc["input_ids"])):
+            txt = tok.decode(gen[j][enc["input_ids"].shape[1]:],
+                             skip_special_tokens=True)
+            m = re.search(r"[0-7]", txt)
+            outs.append(int(m.group()) if m else -1)
     return outs
 
 

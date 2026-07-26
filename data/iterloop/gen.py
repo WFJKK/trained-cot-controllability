@@ -34,7 +34,7 @@ from iterloop_common import (M, LETTER, ALPHABET, TOPICS, chain, build_prompt,
                              render_sentence, split_sentences, strip_opener)
 
 NS = [3, 4, 5, 6]
-OOD_N = 7
+OOD_N = 7          # overridden by --ood_n
 
 
 def perm_is_train(perm):
@@ -167,13 +167,15 @@ def main():
     ap.add_argument("--train", type=int, default=20000)
     ap.add_argument("--ood", type=int, default=2000)
     ap.add_argument("--depth", type=int, default=500)
+    ap.add_argument("--ood_n", type=int, default=OOD_N,
+                    help="depth of the eval_depth split; the point of the\n                          experiment is to find where single-pass computation\n                          breaks, so this needs to be pushable well past 7")
     ap.add_argument("--probe_n", type=int, default=40000)
     ap.add_argument("--audit", action="store_true")
     args = ap.parse_args()
 
     spec = [("train", args.train, True, NS),
             ("eval_ood", args.ood, False, NS),
-            ("eval_depth", args.depth, False, [OOD_N])]
+            ("eval_depth", args.depth, False, [args.ood_n])]
 
     stego = build(spec, 1234, 5678, "stego")
     write(os.path.join(args.out, "data.jsonl"), stego)
