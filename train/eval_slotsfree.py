@@ -70,7 +70,9 @@ def main():
     k = len(rows[0]["slots"])
     fp = set(rows[0]["free_pos"])
     derived = [i for i in range(k) if i not in fp]
-    corrupt = derived[0] if derived else 0          # corrupt a DERIVED slot
+    # corrupt the second derived slot: a one-entry prefix is too far
+    # off-distribution and the model fails to terminate cleanly
+    corrupt = derived[1] if len(derived) > 1 else derived[0]
     print(f"{len(rows)} records, k={k}, free at {sorted(i+1 for i in fp)}, "
           f"corrupting slot {corrupt+1}", flush=True)
 
@@ -116,6 +118,16 @@ def main():
             prev = cur
         return out
 
+    def first_completion(t):
+        """Cut at the end of the first answer.
+
+        With a short forced prefix the model does not always stop cleanly and
+        goes on to emit a second completion. Parsing the concatenation gave 11
+        slots where 5 were expected and silently voided the propagation test.
+        """
+        m = re.search(r"The answer is\s+(?:Yes|No)\.?", t, re.IGNORECASE)
+        return t[: m.end()] if m else t
+
     def answer_of(t):
         m = re.search(r"The answer is\s+(Yes|No)", t, re.IGNORECASE)
         return m.group(1).capitalize() if m else None
@@ -128,6 +140,7 @@ def main():
     for i in range(0, len(rows), args.bs):
         batch = rows[i : i + args.bs]
         for r, t in zip(batch, gen([chat(x["prompt"]) + "<think>\n" for x in batch])):
+            t = first_completion(t)
             pairs = [(m.group(1), m.group(2)) for m in SLOT.finditer(t)]
             vm = VERDICT.search(t)
             vw = vm.group(1) if vm else None
@@ -185,6 +198,7 @@ def main():
             pref.append(chat(r["prompt"]) + "<think>\n"
                         + "Reviewing the list in order: " + "; ".join(parts) + ";")
         for r, t in zip(batch, gen(pref)):
+            t = first_completion(t)
             tail_pairs = [(m.group(1), m.group(2)) for m in SLOT.finditer(t)]
             vm = VERDICT.search(t)
             vw = vm.group(1) if vm else None
@@ -225,7 +239,12 @@ def main():
         e = sum(r[f"eff_{lab}"] for r in swaps) / sn
         f_ = sum(r[f"flip_{lab}"] for r in swaps)
         L.append(f"  {lab:18} {e:+12.3f} {f_:>10}/{len(swaps)}")
-    L += ["", f"PROPAGATION (derived slot {corrupt+1} forced wrong, n={len(props)})"]
+    usable = sum(1 for r in props if "self_consistent_after" in r)
+    L += ["", f"PROPAGATION (derived slot {corrupt+1} forced wrong, n={len(props)}, "
+          f"{usable} parsed to full length)"]
+    if usable < 0.5 * len(props):
+        L.append("  WARNING: most generations did not parse to k slots; the rates")
+        L.append("  below are computed on a small and possibly biased subset.")
     for key, lab in (("self_consistent_after", "chain stays self-consistent"),
                      ("snapped_back", "final slot snapped back (recomputed)"),
                      ("verdict_flipped", "verdict followed the corruption"),
